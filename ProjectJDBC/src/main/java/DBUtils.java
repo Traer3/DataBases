@@ -22,5 +22,31 @@ public class DBUtils {
         return  connection;
     }
 
+    /*
+    public static Connection getConnection(){
+
+        String dbURL = null;
+        String dbUsername = "sa";
+        String dbPassword = "";
+
+        Connection connection = null;
+		
+        FileInputStream fis;  
+        Properties properties = new Properties(); 
+        
+        try {
+            fis = new FileInputStream("src/main/resources/config.properties"); 
+            properties.load(fis); 
+            dbURL = properties.getProperty("db.host"); 
+            
+            connection = DriverManager.getConnection(dbURL,dbUsername,dbPassword);
+            
+        }catch (Exception e){
+            System.out.println(e);
+        }
+        return  connection;
+    }
+    */
+
 
 }
